@@ -1,0 +1,92 @@
+
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+
+
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("mod1.png");
+
+background-size: cover;
+background-position: center;
+
+}
+
+
+
+/* Container do produto */
+.card {
+background: white;
+width: 250px;
+margin: 40px auto;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+transform: scale(1.05);
+}
+
+/* Imagem */
+.card img {
+width: 100%;
+border-radius: 10px;
+}
+
+/* Nome do produto */
+.card h2 {
+margin: 10px 0;
+}
+
+/* Preço */
+.card p {
+color: #555;
+font-size: 18px;
+}
+
+/* Botão */
+.card button {
+background: black;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.card button:hover {
+background: #444;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+
+    column-gap: 40px; /* espaço horizontal */
+    row-gap: 20px;    /* espaço vertical */
+
+    justify-content: center;
+    margin: 40px auto;
+
+    transform: translateX(200px)
+}
+.card {
+    width: 400px; /* 👈 aumenta largura */
+    box-sizing: border-box;
+}
+    
+
+
+.imagens {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; /* 👈 impede quebrar linha */
+}
+
+.imagens img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
