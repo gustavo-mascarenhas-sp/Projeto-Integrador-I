@@ -90,3 +90,214 @@ background: #444;
     height: auto;
     border-radius: 10px;
 }
+
+/* ================================================= */
+/* ================= CONFIG GERAL ================== */
+/* ================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================================================= */
+/* ================= PAGINA INICIAL ================ */
+/* ================================================= */
+
+.home {
+    overflow: hidden;
+}
+
+
+/* ================================================= */
+/* ============= GRID DAS 6 IMAGENS ================ */
+/* ================================================= */
+
+.fundo-grid {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* ================================================= */
+/* ============ CONFIGURAÇÃO DAS IMAGENS =========== */
+/* ================================================= */
+
+.bg-img {
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    filter: brightness(0.45);
+
+    transition: 0.4s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.bg-img:hover {
+
+    filter: brightness(0.7);
+
+    transform: scale(1.02);
+}
+
+
+/* ================================================= */
+/* =========== COLOQUE SUAS IMAGENS AQUI =========== */
+/* ================================================= */
+
+
+/* IMAGEM 1 */
+
+.img1 {
+
+    background-image: url("mod1.png");
+}
+
+
+/* IMAGEM 2 */
+
+.img2 {
+
+    background-image: url("ca_br_1_fr.png");
+}
+
+
+/* IMAGEM 3 */
+
+.img3 {
+
+    background-image: url("ca_br2_fr.png");
+}
+
+
+/* IMAGEM 4 */
+
+.img4 {
+
+    background-image: url("ca_br3_fr1.png");
+}
+
+
+/* IMAGEM 5 */
+
+.img5 {
+
+    background-image: url("ca_pr_gr_fr2.png");
+}
+
+
+/* IMAGEM 6 */
+
+.img6 {
+
+    background-image: url("reg_fr.png");
+}
+
+
+
+/* ================================================= */
+/* ================= TEXTO CENTRAL ================= */
+/* ================================================= */
+
+.overlay {
+
+    position: relative;
+
+    z-index: 10;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* TÍTULO */
+
+.overlay h1 {
+
+    font-size: 80px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* SUBTITULO */
+
+.overlay p {
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================================================= */
+/* ==================== BOTÃO ====================== */
+/* ================================================= */
+
+.entrar {
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER BOTÃO */
+
+.entrar:hover {
+
+    transform: scale(1.08);
+
+    background: black;
+
+    color: white;
+}
